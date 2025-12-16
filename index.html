@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unsplash Lab 2026</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <div class="background-blobs"></div>
+
+  <main class="container">
+    <header class="header">
+      <h1>Unsplash<span class="highlight">Lab</span></h1>
+      <p class="subtitle">Next-Gen API Consumption Demo</p>
+    </header>
+
+    <div class="glass-panel">
+      <div class="search-bar">
+        <input id="q" type="text" value="Makkah" placeholder="Search visual assets..." autocomplete="off" />
+      </div>
+      
+      <div class="controls">
+        <button id="btn-xhr" class="btn">
+          <span class="btn-text">XHR</span>
+          <span class="btn-glow"></span>
+        </button>
+        <button id="btn-fetch" class="btn">
+          <span class="btn-text">Fetch (Promise)</span>
+          <span class="btn-glow"></span>
+        </button>
+        <button id="btn-async" class="btn btn-primary">
+          <span class="btn-text">Fetch (Async/Await)</span>
+          <span class="btn-glow"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="status-container">
+      <p id="status" class="status-text">Ready to search.</p>
+      <div id="loader" class="loader hidden"></div>
+    </div>
+
+    <section id="grid" class="grid"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
